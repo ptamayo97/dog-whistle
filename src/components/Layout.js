@@ -2,6 +2,8 @@ import React, { Fragment } from "react";
 import { Helmet } from "react-helmet";
 import useSiteMetadata from "./SiteMetadata";
 import { withPrefix } from "gatsby";
+import Navbar from "./Navbar";
+import "bulma";
 
 const TemplateWrapper = ({ children }) => {
   const { title, description } = useSiteMetadata();
@@ -23,6 +25,7 @@ const TemplateWrapper = ({ children }) => {
         <meta property="og:title" content={title} />
         <meta property="og:url" content="/" />
       </Helmet>
+      <Navbar />
       <Fragment>{children}</Fragment>
     </div>
   );
