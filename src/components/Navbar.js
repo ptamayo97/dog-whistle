@@ -39,7 +39,7 @@ const Navbar = () => {
           <Link to="/recordings" className="navbar-item">
             Recording
           </Link>
-          <Link to="/video_sessions" className="navbar-item">
+          <Link to="/videos" className="navbar-item">
             Video Sessions
           </Link>
           <Link to="/tapes" className="navbar-item">
