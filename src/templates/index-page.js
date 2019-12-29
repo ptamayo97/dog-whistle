@@ -5,47 +5,52 @@ import Layout from "../components/Layout";
 import Navbar from "../components/Navbar";
 import Card from "../components/Card";
 
-export const IndexPageTemplate = ({}) => (
-  <Fragment>
-    <div>
-      <section className="hero is-info is-large">
-        <div className="hero-body">
-          <div className="container">
-            <div className="columns ">
-              <div className="column is-half">
-                <h1 className="title">Large title</h1>
-                <h2 className="subtitle">Large subtitle</h2>
+export const IndexPageTemplate = ({ title }) => {
+  console.log({ title });
+  return (
+    <Fragment>
+      <div>
+        <section className='hero is-info is-large'>
+          <div className='hero-body'>
+            <div className='container'>
+              <div className='columns is-centered '>
+                <div className='column is-half has-text-centered'>
+                  <h1 className='title'>{title}</h1>
+                  <h2 className='subtitle'>Large subtitle</h2>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-      </section>
-      <section>
-        <div className="container">
-          <div className="columns">
-            <div className="column">
-              <Card />
-            </div>
-            <div className="column">
-              <Card />
-            </div>
-            <div className="column">
-              <Card />
+        </section>
+        <section>
+          <div className='container'>
+            <div className='columns'>
+              <div className='column'>
+                <Card />
+              </div>
+              <div className='column'>
+                <Card />
+              </div>
+              <div className='column'>
+                <Card />
+              </div>
             </div>
           </div>
-        </div>
-      </section>
-    </div>
-  </Fragment>
-);
+        </section>
+      </div>
+    </Fragment>
+  );
+};
 
-IndexPageTemplate.propTypes = {};
+IndexPageTemplate.propTypes = {
+  title: PropTypes.string
+};
 
 const IndexPage = ({ data }) => {
   const { frontmatter } = data.markdownRemark;
   return (
     <Layout>
-      <IndexPageTemplate />
+      <IndexPageTemplate title={frontmatter.title} />
     </Layout>
   );
 };
