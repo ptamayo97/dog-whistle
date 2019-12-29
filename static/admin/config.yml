@@ -112,11 +112,58 @@ collections:
           - { label: Title, name: title, widget: string }
           - { label: Image, name: image, widget: string }
           - { label: Subheading, name: subheading, widget: string }
+      - file: "src/pages/index.md"
+        label: "News Page"
+        name: "news"
+        fields:
           - {
-              label: "Main Section Heading",
-              name: sectionTitle,
-              widget: string,
+              label: "Template Key",
+              name: "templateKey",
+              widget: "hidden",
+              default: "news-page",
             }
+          - { label: Title, name: title, widget: string }
+          - { label: Image, name: image, widget: string }
+          - { label: Subheading, name: subheading, widget: string }
+      - file: "src/pages/index.md"
+        label: "Recording Page"
+        name: "recording"
+        fields:
+          - {
+              label: "Template Key",
+              name: "templateKey",
+              widget: "hidden",
+              default: "recording-page",
+            }
+          - { label: Title, name: title, widget: string }
+          - { label: Image, name: image, widget: string }
+          - { label: Subheading, name: subheading, widget: string }
+      - file: "src/pages/index.md"
+        label: "Videos Page"
+        name: "videos"
+        fields:
+          - {
+              label: "Template Key",
+              name: "templateKey",
+              widget: "hidden",
+              default: "videos-page",
+            }
+          - { label: Title, name: title, widget: string }
+          - { label: Image, name: image, widget: string }
+          - { label: Subheading, name: subheading, widget: string }
+      - file: "src/pages/index.md"
+        label: "Tapes Page"
+        name: "tapes"
+        fields:
+          - {
+              label: "Template Key",
+              name: "templateKey",
+              widget: "hidden",
+              default: "tapes-page",
+            }
+          - { label: Title, name: title, widget: string }
+          - { label: Image, name: image, widget: string }
+          - { label: Subheading, name: subheading, widget: string }
       - file: "src/pages/about/index.md"
         label: "About Page"
         name: "about"
@@ -130,187 +177,18 @@ collections:
           - { label: Title, name: title, widget: string }
           - { label: Image, name: image, widget: string }
           - { label: Subheading, name: subheading, widget: string }
+      - file: "src/pages/contact/index.md"
+        label: "Contact Page"
+        name: "contact"
+        fields:
           - {
-              label: "Main Section Heading",
-              name: sectionTitle,
-              widget: string,
+              label: "Template Key",
+              name: "templateKey",
+              widget: "hidden",
+              default: "contact-page",
             }
-          - {
-              label: "Main Section Description",
-              name: sectionDescription,
-              widget: string,
-            }
-          - label: "SWE Officers"
-            name: "sweOfficers"
-            widget: "list"
-            create: true
-            fields:
-              - { label: Name, name: name, widget: string }
-              - { label: Email, name: email, widget: string }
-              - { label: Position, name: position, widget: string }
-              - { label: Image, name: image, widget: string }
-      # - file: "src/pages/calendar/index.md"
-      #   label: "Calendar Page"
-      #   name: "calendar"
-      #   fields:
-      #     - {
-      #         label: "Template Key",
-      #         name: "templateKey",
-      #         widget: "hidden",
-      #         default: "calendar-page",
-      #       }
-      #     - { label: Title, name: title, widget: string }
-      #     - { label: Image, name: image, widget: string }
-      #     - { label: Subheading, name: subheading, widget: string }
-      #     - { label: Section Title, name: sectionTitle, widget: string }
-      #     - { label: Calendar URL, name: calURL, widget: string }
-      # - file: "src/pages/envision/index.md"
-      #   label: "Envision Page"
-      #   name: "envision"
-      #   fields:
-      #     - {
-      #         label: "Template Key",
-      #         name: "templateKey",
-      #         widget: "hidden",
-      #         default: "envision-page",
-      #       }
-      #     - { label: Title, name: title, widget: string }
-      #     - { label: Image, name: image, widget: string }
-      #     - { label: Subheading, name: subheading, widget: string }
-      #     - { label: "Section Title", name: sectionTitle, widget: string }
-      #     - label: "Envision Events"
-      #       name: "pageEvents"
-      #       widget: "list"
-      #       create: true
-      #       fields:
-      #         - { label: "Event Title", name: "eventTitle", widget: "string" }
-      #         - {
-      #             label: "Event Description ",
-      #             name: "eventDescription",
-      #             widget: "string",
-      #           }
-      #         - { label: "Photo", name: "eventImage", widget: "string" }
-      #         - { label: "Link", name: "eventLink", widget: "string" }
-      # - file: "src/pages/social/index.md"
-      #   label: "Social Page"
-      #   name: "social"
-      #   fields:
-      #     - {
-      #         label: "Template Key",
-      #         name: "templateKey",
-      #         widget: "hidden",
-      #         default: "social-page",
-      #       }
-      #     - { label: Title, name: title, widget: string }
-      #     - { label: Image, name: image, widget: string }
-      #     - { label: Subheading, name: subheading, widget: string }
-      #     - {
-      #         label: "Events Section Title",
-      #         name: sectionTitle,
-      #         widget: string,
-      #       }
-      #     - {
-      #         label: "Events Section Description",
-      #         name: sectionDescription,
-      #         widget: string,
-      #       }
-      #     - label: "Upcoming Events"
-      #       name: "pageEvents"
-      #       widget: "list"
-      #       create: true
-      #       fields:
-      #         - { label: "Event Title", name: "eventTitle", widget: "string" }
-      #         - {
-      #             label: "Event Description ",
-      #             name: "eventDescription",
-      #             widget: "string",
-      #           }
-      #         - { label: "Photo", name: "eventImage", widget: "string" }
-      #         - { label: "Link", name: "eventLink", widget: "string" }
-      # - file: "src/pages/professional/index.md"
-      #   label: "Professional Page"
-      #   name: "professional"
-      #   fields:
-      #     - {
-      #         label: "Template Key",
-      #         name: "templateKey",
-      #         widget: "hidden",
-      #         default: "professional-page",
-      #       }
-      #     - { label: Title, name: title, widget: string }
-      #     - { label: Image, name: image, widget: string }
-      #     - { label: Subheading, name: subheading, widget: string }
-      #     - {
-      #         label: "Events Section Title",
-      #         name: sectionTitle,
-      #         widget: string,
-      #       }
-      #     - {
-      #         label: "Events Section Description",
-      #         name: sectionDescription,
-      #         widget: string,
-      #       }
-      #     - label: "Upcoming Events"
-      #       name: "pageEvents"
-      #       widget: "list"
-      #       create: true
-      #       fields:
-      #         - { label: "Event Title", name: "eventTitle", widget: "string" }
-      #         - {
-      #             label: "Event Description ",
-      #             name: "eventDescription",
-      #             widget: "string",
-      #           }
-      #         - { label: "Photo", name: "eventImage", widget: "string" }
-      #         - { label: "Link", name: "eventLink", widget: "string" }
-      # - file: "src/pages/outreach/index.md"
-      #   label: "Outreach Page"
-      #   name: "outreach"
-      #   fields:
-      #     - {
-      #         label: "Template Key",
-      #         name: "templateKey",
-      #         widget: "hidden",
-      #         default: "outreach-page",
-      #       }
-      #     - { label: Title, name: title, widget: string }
-      #     - { label: Image, name: image, widget: string }
-      #     - { label: Subheading, name: subheading, widget: string }
-      #     - {
-      #         label: "Events Section Title",
-      #         name: sectionTitle,
-      #         widget: string,
-      #       }
-      #     - {
-      #         label: "Events Section Description",
-      #         name: sectionDescription,
-      #         widget: string,
-      #       }
-      #     - label: "Upcoming Events"
-      #       name: "pageEvents"
-      #       widget: "list"
-      #       create: true
-      #       fields:
-      #         - { label: "Event Title", name: "eventTitle", widget: "string" }
-      #         - {
-      #             label: "Event Description ",
-      #             name: "eventDescription",
-      #             widget: "string",
-      #           }
-      #         - { label: "Photo", name: "eventImage", widget: "string" }
-      #         - { label: "Link", name: "eventLink", widget: "string" }
-      # - file: "src/pages/contact/index.md"
-      #   label: "Contact Page"
-      #   name: "contact"
-      #   fields:
-      #     - {
-      #         label: "Template Key",
-      #         name: "templateKey",
-      #         widget: "hidden",
-      #         default: "contact-page",
-      #       }
-      #     - { label: Title, name: title, widget: string }
-      #     - { label: Image, name: image, widget: string }
-      #     - { label: Subheading, name: subheading, widget: string }
-      #     - { label: Section Title, name: sectionTitle, widget: string }
-      #     - { label: Submit Link, name: submitLink, widget: string }
+          - { label: Title, name: title, widget: string }
+          - { label: Image, name: image, widget: string }
+          - { label: Subheading, name: subheading, widget: string }
+          - { label: Section Title, name: sectionTitle, widget: string }
+          - { label: Submit Link, name: submitLink, widget: string }
