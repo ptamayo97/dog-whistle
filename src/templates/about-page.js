@@ -3,8 +3,8 @@ import PropTypes from "prop-types";
 import { graphql } from "gatsby";
 import Layout from "../components/Layout";
 
-export const AboutPageTemplate = ({}) => {
-  return <Fragment></Fragment>;
+export const AboutPageTemplate = ({ title }) => {
+  return <Fragment>{title}</Fragment>;
 };
 
 AboutPageTemplate.propTypes = {};
@@ -14,7 +14,7 @@ const AboutPage = ({ data }) => {
 
   return (
     <Layout>
-      <AboutPageTemplate />
+      <AboutPageTemplate title={frontmatter.title} />
     </Layout>
   );
 };
