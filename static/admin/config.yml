@@ -164,6 +164,16 @@ collections:
           - { label: Title, name: title, widget: string }
           - { label: Image, name: image, widget: string }
           - { label: Subheading, name: subheading, widget: string }
+          - {
+              label: Tapes,
+              name: tapes,
+              widget: object,
+              fields:
+                [
+                  { label: Tape, name: tape, widget: string },
+                  { label: Price, name: price, widget: string },
+                ],
+            }
       - file: "src/pages/about/index.md"
         label: "About Page"
         name: "about"
