@@ -167,10 +167,10 @@ collections:
           - label: Tapes
             name: tapes
             widget: lists
-            fields: 
-              - { label: Tape, name: tape, widget: string },
-              - { label: Price, name: price, widget: string },
-            
+            fields:
+              - { label: Tape, name: tape, widget: string }
+              - { label: Price, name: price, widget: string }
+
       - file: "src/pages/about/index.md"
         label: "About Page"
         name: "about"
