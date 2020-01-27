@@ -8,7 +8,6 @@ const TapesPagePreview = ({ entry, getAsset }) => {
   if (data) {
     return (
       <TapesPageTemplate
-        image={data.image}
         title={data.title}
         tapes={data.tapes}
         subheading={data.subheading}

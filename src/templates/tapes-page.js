@@ -66,7 +66,7 @@ export const pageQuery = graphql`
           price
           image {
             childImageSharp {
-              fluid(maxWidth: 650, maxHeight: 400) {
+              fluid(maxWidth: 650, quality: 100) {
                 ...GatsbyImageSharpFluid
               }
             }
