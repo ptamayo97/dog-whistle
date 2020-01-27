@@ -1,5 +1,5 @@
 ---
-template-key: tapes-page
+templateKey: tapes-page
 title: Tapes
 tapes:
   - tape: tape 1
