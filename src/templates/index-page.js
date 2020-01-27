@@ -10,28 +10,28 @@ export const IndexPageTemplate = ({ title }) => {
   return (
     <Fragment>
       <div>
-        <section className="hero is-info is-large">
-          <div className="hero-body">
-            <div className="container">
-              <div className="columns is-centered ">
-                <div className="column is-half has-text-centered">
-                  <h1 className="title">{title}</h1>
-                  <h2 className="subtitle">Large subtitle</h2>
+        <section className='hero is-dark is-fullheight-with-navbar'>
+          <div className='hero-body'>
+            <div className='container'>
+              <div className='columns is-centered '>
+                <div className='column is-half has-text-centered'>
+                  <h1 className='title'>{title}</h1>
+                  <h2 className='subtitle'>Large subtitle</h2>
                 </div>
               </div>
             </div>
           </div>
         </section>
         <section>
-          <div className="container">
-            <div className="columns">
-              <div className="column">
+          <div className='container'>
+            <div className='columns'>
+              <div className='column'>
                 <Card />
               </div>
-              <div className="column">
+              <div className='column'>
                 <Card />
               </div>
-              <div className="column">
+              <div className='column'>
                 <Card />
               </div>
             </div>

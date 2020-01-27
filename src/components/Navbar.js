@@ -32,7 +32,11 @@ class Navbar extends React.Component {
   render() {
     const { navBarActiveClass } = this.state;
     return (
-      <nav className='navbar' role='navigation' aria-label='main navigation'>
+      <nav
+        className='navbar is-black'
+        role='navigation'
+        aria-label='main navigation'
+      >
         <div className='navbar-brand'>
           <a className='navbar-item' href='/'>
             {/* <img
@@ -57,9 +61,9 @@ class Navbar extends React.Component {
         </div>
         <div
           id='navbarBasicExample'
-          className={`navbar-menu ${navBarActiveClass}`}
+          className={`navbar-menu ${navBarActiveClass} container`}
         >
-          <div className='navbar-start'>
+          <div className='navbar-start '>
             <Link to='/' className='navbar-item'>
               Home
             </Link>
@@ -82,6 +86,12 @@ class Navbar extends React.Component {
               Contact
             </Link>
           </div>
+          <div className='navbar-end'>
+            <a href='/admin' className='navbar-item'>
+              Sign In
+            </a>
+          </div>
+
           {/* <div className="navbar-end">
           <div className="navbar-item">
             <div className="buttons">

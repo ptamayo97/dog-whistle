@@ -7,22 +7,22 @@ import "bulma";
 const TemplateWrapper = ({ children }) => {
   const { title, description } = useSiteMetadata();
   return (
-    <div className="js">
+    <div className='js has-background-grey'>
       <Helmet>
-        <html lang="en" />
+        <html lang='en' className='has-background-grey-dark' />
 
         <title>Dog Whistle Records</title>
-        <meta name="description" content={description} />
+        <meta name='description' content={description} />
 
         <link
-          rel="icon"
-          type="image/png"
+          rel='icon'
+          type='image/png'
           // href={`${withPrefix("/")}img/icon_gear.png`}
         />
-        <meta name="theme-color" content="#fff" />
+        <meta name='theme-color' content='#fff' />
 
-        <meta property="og:title" content={title} />
-        <meta property="og:url" content="/" />
+        <meta property='og:title' content={title} />
+        <meta property='og:url' content='/' />
       </Helmet>
       <Navbar />
       <Fragment>{children}</Fragment>

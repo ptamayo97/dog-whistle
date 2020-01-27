@@ -8,17 +8,24 @@ import Card from "../components/Card";
 export const TapesPageTemplate = ({ title, tapes }) => {
   console.log({ title, tapes });
   return (
-    <section className="section">
-      <div className="container">
-        <div>
+    <section className='section'>
+      <div className='container has-text-light'>
+        <div className='has-text-centered is-size-1'>
           <h1>{title}</h1>
         </div>
-        <div className="columns">
-          {tapes.map(tape => (
-            <div className="column ">
-              {tape.tape} {tape.price}
-            </div>
-          ))}
+        <div className='columns'>
+          {tapes.map(x => {
+            const { tape, price, image } = x;
+            return (
+              <div className='column '>
+                <img src={image} alt={tape} />
+                <div className='level'>
+                  <p className='is-size-4'>{tape}</p>
+                  <button className='button'>Buy: ${price} </button>
+                </div>
+              </div>
+            );
+          })}
         </div>
       </div>
     </section>
@@ -57,6 +64,7 @@ export const pageQuery = graphql`
         tapes {
           tape
           price
+          image
         }
       }
     }
