@@ -64,7 +64,13 @@ export const pageQuery = graphql`
         tapes {
           tape
           price
-          image
+          image {
+            childImageSharp {
+              fluid(maxWidth: 650, maxHeight: 400) {
+                ...GatsbyImageSharpFluid
+              }
+            }
+          }
         }
       }
     }
