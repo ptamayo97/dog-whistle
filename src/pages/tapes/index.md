@@ -4,9 +4,11 @@ title: Tapes
 image: asdf
 subheading: asdf
 tapes:
-  - price: '5'
+  - image: /img/reactjs-1549375923390-6076.jpg
+    price: '5'
     tape: Tape 1
-  - price: '10'
+  - image: /img/reactjs-1549375923390-6076.jpg
+    price: '10'
     tape: Tape 2
 ---
 
