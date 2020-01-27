@@ -2,10 +2,11 @@
 templateKey: tapes-page
 title: Tapes
 tapes:
-  - tape: tape 1
+  - image: /img/reactjs-1549375923390-6076.jpg
     price: 5
-    image: /img/jumbotron.jpg
-  - tape: tape 2
+    tape: tape 1
+  - image: /img/reactjs-1549375923390-6076.jpg
     price: 10
-    image: /img/reactjs-1549375923390-6076.jpg
+    tape: tape 2
 ---
+
