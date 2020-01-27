@@ -162,8 +162,8 @@ collections:
               default: "tapes-page",
             }
           - { label: Title, name: title, widget: string }
-          - { label: Image, name: image, widget: string }
-          - { label: Subheading, name: subheading, widget: string }
+          # - { label: Image, name: image, widget: string }
+          # - { label: Subheading, name: subheading, widget: string }
           - label: Tapes
             name: tapes
             widget: list

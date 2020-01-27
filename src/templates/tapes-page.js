@@ -34,7 +34,7 @@ export const TapesPageTemplate = ({ title, tapes }) => {
 
 TapesPageTemplate.propTypes = {
   title: PropTypes.string,
-  tapes: PropTypes.arrayOf(PropTypes.object)
+  tapes: PropTypes.array
 };
 
 const TapesPage = ({ data }) => {
@@ -66,7 +66,7 @@ export const pageQuery = graphql`
           price
           image {
             childImageSharp {
-              fluid(maxWidth: 1900, quality: 100) {
+              fluid(maxWidth: 800, quality: 100) {
                 ...GatsbyImageSharpFluid
               }
             }
